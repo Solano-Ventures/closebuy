@@ -39,6 +39,7 @@ bower_components
 ###Deployment###
 iisnode.yml
 
-app/hooks
-app/plugins
-app/scss
+hooks
+plugins
+scss
+platforms
