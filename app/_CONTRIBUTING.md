@@ -1,6 +1,21 @@
 Git Workflow
 =====================
 
+# Install
+
+- [ ] Make your own fork of the repo using Github.com
+- [ ] Clone down your fork
+- [ ] Install dependencies.
+- [ ] If all loads correctly proceed, otherwise please contact cmccloud
+- [ ] Create a remote head on logos/master:
+```
+> git remote add production https://github.com/Solano-Ventures/logos.git
+```
+- [ ] Confirm the remote was added:
+```
+> git remote -v
+```
+
 # Making Contributions
 
 1. Navigate to your 'master' head:
