@@ -1,0 +1,16 @@
+- /login (incorrect pass) -> 'error' -> /login
+-	/login (correct pass) -> /sellbuy-splash -> /tab/buy (discover) -> /tab/buy/confirmation (confirm) -> confirms -> tab/buy
+-																					 -> /tab/buy (discover) -> reject -> /tab/buy (discover)
+X 																				 -> /tab/camera (sell)
+
+- /signup (taken name) -> 'error' -> /signup
+x /signup (name free) -> /sellbuy-splash -> /tab/camera (sell)
+-									 										   -> /tab/buy (discover) -> /tab/buy/confirmation (confirm) -> confirms -> tab/buy
+-								 											   -> /tab/buy (discover) -> reject -> /tab/buy (discover)
+
+X /signup (name free) -> /sellbuy-splash -> /tab/settings -> 'logout' -> /login
+
+LOGOUT parse.user.logout()
+SELL
+NEXT ITEM BUTTON STOPS WORKING IF YOU MAKE IT TO THE END
+VIEWS RENDER IF NOT LOGIN
