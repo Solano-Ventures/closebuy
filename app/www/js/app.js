@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
-angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'settings', 'ui.router']) 
+angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'account', 'ui.router']) 
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -115,11 +115,21 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
     })
 
     // routing for settings page
-    .state('tab.settings', {
-      url: '/settings',
+    .state('tab.account', {
+      url: '/account',
       views: {
-        'tab-settings': {
-          templateUrl: 'modules/settings/settings.html',
+        'tab-account': {
+          templateUrl: 'modules/account/account.html',
+          controller: 'AccountController'
+        }
+      }
+    })
+
+    .state('tab.filter', {
+      url:'/filter',
+      views: {
+        'tab-filter':{
+         templateUrl: 'modules/settings/settings.html',
           controller: 'SettingsController'
         }
       }
