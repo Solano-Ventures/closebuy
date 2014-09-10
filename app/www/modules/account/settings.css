@@ -1,6 +1,7 @@
-.logoutButton {
+.logoutButton,
+.sellButton {
   display: block;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 20%;
   padding: 0;
   width: 60%;
@@ -12,10 +13,25 @@
   box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.37);
 }
 
-.logoutButton h3 {
+.logoutButton h3,
+.sellButton h3 {
   margin: 0;
-  padding: 4px;
+  padding: 2px;
   width: 100%;
   text-align: center;
   color: #434343;
+}
+
+.accountContainer{
+  
+}
+
+.list{
+  color:#434343;
+  background-color: #CBDA41;
+  width:60%;
+  margin-left:20%;
+}
+.list .price.account{
+
 }
