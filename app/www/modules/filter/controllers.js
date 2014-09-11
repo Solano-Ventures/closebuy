@@ -1,9 +1,7 @@
-angular.module('account', ['account.services'])
+angular.module('filter', ['filter.services'])
 
-.controller('AccountController', function($scope, $location, $filter, Auth) {
+.controller('FilterController', function($scope, $location, Auth) {
   $scope.items = [];
-
-
   $scope.logoutUser = function() {
     Auth.logoutUser();
   };
@@ -23,11 +21,6 @@ angular.module('account', ['account.services'])
   	  $scope.$apply()
   	})
   }
-  var orderBy = $filter('orderBy')
-
-  $scope.order = function(listItem, reverse){
-  	$scope.items = orderBy($scope.items, listItem, reverse)
-  };
   	/*({
   		success:function(results){
   			angular.forEach(results, function(item){
