@@ -1,0 +1,16 @@
+<ion-view title="Filter" ng-init="getUserData()">
+  <ion-content class="has-header padding">
+    <!-- Miles/kilometers user choice -->
+    <!-- Geo-radius slider -->
+    <!-- Price-preference slider -->
+    <div class="Accountcontainer">
+      <div class="list" ng-repeat="item in items">
+    	<span class="date.account">{{item.date | date: format: timezone}}</span>
+    	<span class="title.account">{{item.title}}</span>
+    	<span class="price.account">{{item.price | currency: USD}}</span>
+      </div>
+    </div>
+    <div class="sellButton" ng-click="routeToSell()"><h3>Sell an item</h3></div>
+    <div class="logoutButton" ng-click="logoutUser()"><h3>Logout</h3></div>
+  </ion-content>
+</ion-view>
