@@ -22,16 +22,54 @@
   color: #434343;
 }
 
-.accountContainer{
-  
+.accountheader {
+  font-size: 28px;
+  font-family: 'Damion', cursive;
+  color: RGBA(68, 68, 68, 1);
 }
 
-.list{
-  color:#434343;
-  background-color: #CBDA41;
-  width:60%;
-  margin-left:20%;
+.container--account{
+  margin-top: 10px;
+  color: #6b8665;
+  border: 10px solid #c4f4f2;
+  background-color: RGBA(196, 244, 242, 1);
+  pointer: none; 
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.37);
+  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.37);
+  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.37);
 }
-.list .price.account{
 
+.date--account.accountheader{
+  padding-right: 27px;
+}
+
+.list--acount {
+  margin-top: 10px;
+  cursor: none;
+}
+
+.list--acount:hover {
+  background-color: RGBA(199, 254, 221, 1); 
+  color: RGBA(37, 62, 60, 1);
+  pointer: none; 
+}
+
+.title--acount.accountitem {
+  font-size: 16px;
+}
+
+.date--account.accountitem {
+  font-size: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.price--account{
+  text-align: right;
+  position: absolute;
+  right: 10px;
+}
+
+.price--account.accountitem {
+  font-size: 18px;
 }

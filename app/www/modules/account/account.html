@@ -3,11 +3,14 @@
     <!-- Miles/kilometers user choice -->
     <!-- Geo-radius slider -->
     <!-- Price-preference slider -->
-    <div class="Accountcontainer">
-      <div class="list" ng-repeat="item in items">
-    	<span class="date.account">{{item.date | date: format: timezone}}</span>
-    	<span class="title.account">{{item.title}}</span>
-    	<span class="price.account">{{item.price | currency: USD}}</span>
+    <div class="container--account">
+      <span class="date--account accountheader">date</span>
+      <span class="title--acount accountheader">title</span>
+      <span class="price--account accountheader">currency</span>
+      <div class="list--acount" ng-repeat="item in items">
+      	<span class="date--account accountitem">{{item.date | date: format: timezone}}</span>
+      	<span class="title--acount accountitem">{{item.title}}</span>
+      	<span class="price--account accountitem">{{item.price | currency: USD}}</span>
       </div>
     </div>
     <div class="sellButton" ng-click="routeToSell()"><h3>Sell an item</h3></div>
