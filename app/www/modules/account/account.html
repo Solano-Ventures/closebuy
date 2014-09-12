@@ -9,7 +9,7 @@
       <span ng-click="reverse = !reverse; order('price', reverse)" class="price--account accountheader">currency</span>
       <div class="list--acount" ng-repeat="item in items">
       	<span class="date--account accountitem">{{item.date | date: format: timezone}}</span>
-      	<span class="title--acount accountitem">{{item.title}}</span>
+      	<span ng-click="test(item.title)" class="title--acount accountitem">{{item.title}}</span>
       	<span class="price--account accountitem">{{item.price | currency}}</span>
       </div>
     </div>
