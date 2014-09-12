@@ -40,5 +40,30 @@ angular.module('account', ['account.services'])
   		}
   	})*/
   /*$scope.getUserData();*/
+  $scope.test = function(title){
+  	var query = new Parse.Query('Items').equalTo('description', title)
+  	query.find().then(function(result){
+  	  result[0].destroy();
+  	})
+  	for(var i = 0; i<$scope.items.length; i++){
+  	  if($scope.items[i].title === title){
+  	  	$scope.items.splice(i,1)
+  	  }
+  	}
+  		/*	result.destroy({
+  				success: function(obj){
+  					console.log("deleted", obj)
+  				},
+  				error: function(obj, error){
+  					console.log(error)
+  				}
+  			})
+  		},
+  		error: function(error){
+  			console.log("error")
+  		}
+  	})*/
+  }
+
 });
  
